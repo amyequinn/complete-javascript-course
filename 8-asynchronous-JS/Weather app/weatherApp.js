@@ -113,37 +113,3 @@ tempElement.addEventListener("click", function() {
 
   }
 });
-//
-//
-// function getWeather(woeid){
-//
-//   //https://crossorigin.me/https://google.com
-//
-//   fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}`)
-//     .then(result => {
-//       console.log(result)
-//       return result.json();
-//     })
-//     .then(data => {
-//       console.log(data)
-//       //
-//       const today = data.consolidated_weather[0]
-//       console.log(today)
-//
-//       const iconElement = document.querySelector('.weather-icon img');
-//       iconElement.src = `https://www.metaweather.com/static/img/weather/png/` + `${today.weather_state_abbr}` + `.png`
-//
-//       const tempElement = document.querySelector('.temperature-value p');
-//       tempElement.innerHTML = `${today.max_temp.toFixed(0)}°C`
-//
-//       const descElement = document.querySelector('.temperature-description p');
-//       descElement.innerHTML = `${today.weather_state_name}`
-//
-//       const locationElement = document.querySelector('.location p');
-//       locationElement.innerHTML = `${data.title}`
-//
-//
-//     })
-// }
-//
-// getWeather(44418)
